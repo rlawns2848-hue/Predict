@@ -13,7 +13,7 @@
 | 구분 | 내용 |
 | --- | --- |
 | 팀·기간 | 4인 · 2026.09.18 ~ 10.16 (상세 페이지 담당은 09.30 ~ 10.12) |
-| **내 담당** | **상세 페이지 좌측 절반과 그 백엔드 전부 (약 1,230줄)** |
+| **내 담당** | **상세 페이지 좌측 절반과 그 백엔드 전부** |
 | 기술 | Java 17 · Spring Boot · MyBatis · MariaDB · Thymeleaf · Chart.js |
 | 원본 저장소 | [`ung-Jin/Predict`](https://github.com/ung-Jin/Predict) 의 fork |
 | 작업일지 | [Notion](https://scratched-ceramic-15c.notion.site/40090bcc7b0780409d99e0e6757d8e30) |
@@ -24,11 +24,11 @@
 
 | | 하는 일 | 파일 |
 | --- | --- | --- |
-| **지역별 상세 표** | 17개 시도 · 식별 3 + 예측 2 + 정확도 3 열 | [`detail.js`](src/main/resources/static/js/detail.js) 651줄 |
-| **한 쿼리로 합치기** | region · forecast · backtest 세 테이블을 한 번에, 정렬도 SQL 에서 | [`DetailMapper.xml`](src/main/resources/mapper/DetailMapper.xml) 49줄 |
+| **지역별 상세 표** | 17개 시도 · 식별 3 + 예측 2 + 정확도 3 열 | [`detail.js`](src/main/resources/static/js/detail.js) |
+| **한 쿼리로 합치기** | region · forecast · backtest 세 테이블을 한 번에, 정렬도 SQL 에서 | [`DetailMapper.xml`](src/main/resources/mapper/DetailMapper.xml) |
 | **지역 A·B 비교** | 최대 2곳. 표 클릭과 모달이 같은 자리로 들어감 | [`detail.js#L108`](src/main/resources/static/js/detail.js#L108) |
 | **CSV 내려받기** | 서버를 거치지 않고 브라우저에서 바로 | [`detail.js#L531`](src/main/resources/static/js/detail.js#L531) |
-| **화면 틀·스타일** | 표 레이아웃, 비율 막대, 선택 상태 색 | [`detail.css`](src/main/resources/static/css/detail.css) 472줄 |
+| **화면 틀·스타일** | 표 레이아웃, 비율 막대, 선택 상태 색 | [`detail.css`](src/main/resources/static/css/detail.css) |
 
 <details><summary>손대지 않은 것</summary>
 
@@ -96,8 +96,4 @@
 1. **응답이 정상이어도 화면은 틀릴 수 있습니다.** 200 OK 와 DOM 을 확인하고 원인을 CSS 에서 찾기까지 오래 걸렸습니다.
 2. **같은 일을 두 군데서 하지 않기.** 정렬을 SQL 과 JS 양쪽에서 하면 기준이 어긋났을 때 어디가 맞는지 알 수 없습니다.
 3. **팀원 코드와는 느슨하게 잇기.** 서로의 함수를 직접 부르는 대신 이벤트로 알려, 상대 코드가 바뀌어도 내 쪽이 안 깨졌습니다.
-
-## 프로젝트 시리즈
-
-[1차 AS기사 스케줄 관리](https://github.com/rlawns2848-hue/Schedule) · **2차 전력사용량 예측 대시보드 (이 저장소)** · [3차 해상교통 안전경로 예측](https://github.com/rlawns2848-hue/Navigate)
 
