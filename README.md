@@ -16,7 +16,7 @@
 | **내 담당** | **상세 페이지 좌측 절반과 그 백엔드 전부** |
 | 기술 | Java 17 · Spring Boot · MyBatis · MariaDB · Thymeleaf · Chart.js |
 | 원본 저장소 | [`ung-Jin/Predict`](https://github.com/ung-Jin/Predict) 의 fork |
-| 작업일지 | [Notion](https://scratched-ceramic-15c.notion.site/3e290bcc7b078003a899ff2954e69fe1) |
+| 작업일지 | [Notion](https://scratched-ceramic-15c.notion.site/3e290bcc7b07808aae43ddc485a81614) |
 
 예측값만 보여 주면 믿을 근거가 없습니다. **지난 12개월 동안 모델이 얼마나 틀렸는지(MAPE·RMSE·MAE)를 같은 표에** 놓아, 숫자를 보는 사람이 스스로 판단할 수 있게 했습니다.
 
